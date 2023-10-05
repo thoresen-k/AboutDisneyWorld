@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Reflection;
 
-namespace wpf_example
+namespace AboutDisneyWorld
 {
     public class ViewModel : INotifyPropertyChanged
     {

@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace wpf_example
+namespace AboutDisneyWorld
 {
     /// <summary>
     /// Interaction logic for App.xaml
