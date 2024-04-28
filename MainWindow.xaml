@@ -4,23 +4,17 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AboutDisneyWorld"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow">
     
     <StackPanel Orientation="Vertical"> 
         <Border>
             <StackPanel Orientation="Vertical">
                 <TextBlock Grid.Row="0"
-                           Text="Lab Build Do Not Field" />
+                           Text="{Binding Title}" />
 
-                <TextBlock Grid.Row="1"
-                           Name="Version" 
-                           Text="{Binding Version}"/>
-
-                <TextBlock Grid.Row="2"
-                           Name="ExtraText" 
-                           Text="{Binding ExtraText}"/>
+				<TextBlock Grid.Row="1"
+                           Text="{Binding Description}" />
             </StackPanel>
         </Border>
-        <Button Click="handleButtonClick" Width="125" Height="50">Reveal Secret Message</Button>
     </StackPanel>
 </Window>

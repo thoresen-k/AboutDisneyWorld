@@ -10,12 +10,7 @@ namespace AboutDisneyWorld
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = new ViewModel();
-        }
-
-        private void handleButtonClick(object sender, RoutedEventArgs e)
-        {
-            ((ViewModel)DataContext).ExtraText = "Clicking the button revealed this text";
+            DataContext = new MainWindowViewModel();
         }
     }
 }
