@@ -1,14 +1,14 @@
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using DisneyWorldConstants = AboutDisneyWorldConstants.AboutDisneyWorldConstants;
 
 namespace AboutDisneyWorld
 {
-    public class MainWindowViewModel: INotifyPropertyChanged
+    public class AnimalKingdomViewModel: INotifyPropertyChanged
     {
-        public MainWindowViewModel()
+        public AnimalKingdomViewModel ()
         {
-            _title = DisneyWorldConstants.MainWindowHeader;
-            _description = DisneyWorldConstants.MainWindowDescription;
+            _title = DisneyWorldConstants.AnimalKingdomHeader;
+            _description = DisneyWorldConstants.AnimalKingdomDescription;
         }
 
         private string _title;
@@ -19,7 +19,7 @@ namespace AboutDisneyWorld
             {
                 _title = value;
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Title)));
-            } 
+            }
         }
 
         private string _description;
@@ -32,7 +32,6 @@ namespace AboutDisneyWorld
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Description)));
             }
         }
-
         public event PropertyChangedEventHandler? PropertyChanged;
     }
 }
